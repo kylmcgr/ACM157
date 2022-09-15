@@ -1,0 +1,16 @@
+A = importdata("fiji.txt");
+mags = A(:,5);
+n = length(mags);
+a = 1 - 0.95;
+ena = sqrt(1/(2*n)*log(2/a));
+[f,x] = ecdf(mags);
+ranks = np.linspace(0, 1, n);
+y = sort
+figure
+hold on
+plot(x,f)
+hold off
+% figure
+% ecdf(mags,'Alpha',a,'Bounds','on')
+% (a) mu=3.3899 sampleMu=3.3750 se=3.3899
+% The sample mean 

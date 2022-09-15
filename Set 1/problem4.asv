@@ -1,0 +1,36 @@
+r = normrnd(0,1,[1 15]);
+figure(1);
+qqplot(r)
+figure(2);
+histfit(r)
+% (a) The points on the QQ plot appear to fall around a straight line with
+% some deviation. The histogram is unimodal but is not symmetric and is
+% only very roughly bell-shaped. In general, the QQ plot is fairly close to
+% the line but deviates further, the less symmetric and bell-shaped the
+% histogram is.
+r = normrnd(0,1,[1 50]);
+figure(3);
+qqplot(r)
+figure(4);
+histfit(r)
+
+r = normrnd(0,1,[1 100]);
+figure(5);
+qqplot(r)
+figure(6);
+histfit(r)
+
+r = normrnd(0,1,[1 1000]);
+figure(7);
+qqplot(r)
+figure(8);
+histfit(r)
+% (b) Similar to (a), the points on the QQ plot appear to fall on the line
+% with less deviation as we increase the number of points. Similarly, the
+% histogram is more symmetric and bell-shaped with the more points used.
+% (c) I would estimate the critical sample size to be around 1000 as at
+% this level of
+this le deviate substantially from linearity
+% (c) (4 points) After experimenting with normal samples in (a) and (b), what would be your estimate
+% for the “critical” sample size n∗, such that for samples of size larger than n∗, the normal-quantile
+% plots are stable enough to be easily interpreted (i.e. do not deviate substantially from linearity)?
